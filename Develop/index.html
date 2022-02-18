@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <!-- Added 2 new default meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
-</head>
-
+    <!-- Updated title to match website name and included 'home' to identify the home page-->
+    <title>Horiseon - Home</title>
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+    <!-- Changed from <div></div> to <header></header>  -->
+    <!-- Removed class and ID from <header> since <header> is a unique identifier as is  -->
+    <header>
+        <!-- Removed 'class="seo"' as the <span> tag is unique as is -->
+        <h1>Hori<span >seo</span>n</h1>
+        <!-- Changed from <div></div> to <nav></nav> -->
+        <nav>
             <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
+                <!-- Updated href links to match with the new labels-->
+                <li><a href="#SEO">Search Engine Optimization</a></li>
+                <li><a href="#rep-management">Online Reputation Management</a></li>
+                <li><a href="#social-marketing">Social Media Marketing</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
     <div class="hero"></div>
     <div class="content">
         <div class="search-engine-optimization">
