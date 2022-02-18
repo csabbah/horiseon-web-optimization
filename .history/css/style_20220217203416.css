@@ -1,3 +1,9 @@
+/* All sections have been organized from top to bottom 
+according to the HTML template 
+
+Additionally, all properties inside blocks have been 
+organized in ascending order for consistency */
+
 /* -------------------------------- Root */
 
 * {
@@ -8,22 +14,24 @@
 
 body {
   background-color: #d9dcd6;
-  /* Added the font for all generic body elements to clean up the CSS code */
+  /* Added the font for all body elements to clean up the CSS code */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Stylizes all link items */
 a {
   color: #ffffff;
   text-decoration: none;
 }
 
+/* Stylizes all paragraphs font-sizes */
 p {
   font-size: 16px;
 }
 
 /* -------------------------------- Header / Nav */
 
-/* Removed the class selector (.header) as the <header> tag itself is unique */
+/* Removed the ".header" class selector as the <header> tag itself is unique */
 header {
   background-color: #2a607c;
   color: #ffffff;
@@ -103,7 +111,7 @@ the effects to the appropriate image based on its numeric value */
   padding: 50px;
 }
 
-/* Added everything in one block since they are all similiar properties */
+/* Added everything in one block since they all share similiar properties */
 #rep-management h2,
 #social-marketing h2,
 #SEO h2 {
@@ -111,7 +119,7 @@ the effects to the appropriate image based on its numeric value */
   margin-bottom: 20px;
 }
 
-/* Target all images in the the all content section vs. adding the specific class per article */
+/* Target all images in the inside the all content section vs. adding the specific class per article */
 #all-content img {
   max-height: 200px;
 }
@@ -129,7 +137,7 @@ the effects to the appropriate image based on its numeric value */
   width: 20%;
 }
 
-/* Added everything in one block since they are all similiar properties */
+/* Added everything in one block since they all share similiar properties */
 .benefit-lead,
 .benefit-cost,
 .benefit-brand {
@@ -137,13 +145,15 @@ the effects to the appropriate image based on its numeric value */
   margin-bottom: 32px;
 }
 
-/* Target all h3 tags in the benefits section vs. adding the specific classes */
+/* Rather than having 3 multiple classes to refer to each h3 elements, 
+we can instead target all h3 elements that fall under the benefit section */
 #benefits h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Target all images in the benefits section vs. adding the specific classes */
+/* Rather than having 3 multiple classes to refer to each image, 
+we can instead target all images that fall under the benefit section */
 #benefits img {
   display: block;
   margin: 10px auto;
@@ -152,7 +162,7 @@ the effects to the appropriate image based on its numeric value */
 
 /* -------------------------------- Footer */
 
-/* Removed the class selector (.footer) as the <footer> tag itself is unique */
+/* Removed the ".footer" class selector as the <footer> tag itself is unique */
 footer {
   clear: both;
   /* Added the single font-family here since header h1 is expected to have a unique font */
