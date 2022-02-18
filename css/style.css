@@ -18,13 +18,13 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Stylizes all link items */
+/* Stylizes the color and removes the underscore for all link items */
 a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* Stylizes all paragraphs */
+/* Stylizes all p elements with a font size of 16px */
 p {
   font-size: 16px;
 }
@@ -38,7 +38,7 @@ header {
   padding: 20px;
 }
 
-/* Replaced div with nav */
+/* Replaced div with nav, this controls the placement of the nav items */
 header nav {
   float: right;
   font-size: 20px;
@@ -67,7 +67,7 @@ header span {
 }
 /* -------------------------------- Hero */
 
-/* Replaced .hero with #hero */
+/* Replaced .hero with #hero, this is the main background image */
 #hero {
   background-image: url('../images/marketing-meeting.jpg');
   background-position: center;
@@ -79,16 +79,17 @@ header span {
 
 /* -------------------------------- Main content body - LEFT SECTION */
 
+/* Replaced .content with #all-content, ths would control the size in width 
+of the left body content, ensuring enough space for the right body content */
 #all-content {
-  /* Replaced .content with #all-content */
   display: inline-block;
   margin-left: 20px;
   width: 75%;
 }
 
-/* To reduce amonut of classes in the HTML file, i use nth-child here to apply 
-the effects to the appropriate image based on its numeric value */
-/* These would replace the clases "float-right" and "float-left" */
+/* To reduce amount of classes in the HTML file, i use nth-child here to apply 
+the effects to the appropriate image based on their numeric value. 
+These would replace the clases "float-right" and "float-left" */
 #all-content article:nth-child(odd) img {
   float: left;
   margin-right: 25px;
@@ -99,7 +100,8 @@ the effects to the appropriate image based on its numeric value */
   margin-left: 25px;
 }
 
-/* Added everything in one block since they are all similiar properties */
+/* Added everything in one block since they all share similiar properties,
+this stylizes the left body containers */
 #SEO,
 #rep-management,
 #social-marketing {
@@ -110,7 +112,8 @@ the effects to the appropriate image based on its numeric value */
   padding: 50px;
 }
 
-/* Added everything in one block since they all share similiar properties */
+/* Added everything in one block since they all share similiar properties,
+this would stylize the headers for each section in the left body containers */
 #rep-management h2,
 #social-marketing h2,
 #SEO h2 {
@@ -118,14 +121,16 @@ the effects to the appropriate image based on its numeric value */
   margin-bottom: 20px;
 }
 
-/* Target all images in the inside the all content section vs. adding the specific class per article */
+/* Target all images inside the 'all content' section vs. adding the specific classes per article,
+this cleans up the clutter and reduces the amount of unecessary lines */
 #all-content img {
   max-height: 200px;
 }
 
 /* -------------------------------- Main content body - LEFT SECTION */
 
-/* Replaced .benefit with #benefit */
+/* Replaced .benefit with #benefit,
+this stylizes the right main body container */
 #benefits {
   background-color: #2589bd;
   clear: both;
@@ -136,7 +141,8 @@ the effects to the appropriate image based on its numeric value */
   width: 20%;
 }
 
-/* Added everything in one block since they all share similiar properties */
+/* Added everything in one block since they all share similiar properties,
+this stylizes the font color and margin for each inner container in #benefits */
 .benefit-lead,
 .benefit-cost,
 .benefit-brand {
@@ -151,8 +157,8 @@ we can instead target all h3 elements that fall under the benefit section */
   text-align: center;
 }
 
-/* Rather than having 3 multiple classes to refer to each image, 
-we can instead target all images that fall under the benefit section */
+/* The same idea as above would apply here, this would control all the 
+images, including their size, margin and display in the #benefits section */
 #benefits img {
   display: block;
   margin: 10px auto;
