@@ -87,9 +87,9 @@ of the left body content, ensuring enough space for the right body content */
   width: 75%;
 }
 
-/* To reduce the amount of classes in the HTML file, i use nth-child here to apply 
+/* To reduce amount of classes in the HTML file, i use nth-child here to apply 
 the effects to the appropriate image based on their numeric value. 
-These would replace the classes "float-right" and "float-left" */
+These would replace the clases "float-right" and "float-left" */
 #all-content article:nth-child(odd) img {
   float: left;
   margin-right: 25px;
