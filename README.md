@@ -1,4 +1,4 @@
-Complete refactoring of the Horiseon website.
+Uoft challenge #1: Refactoring of the Horiseon website.
 
 This includes major clean-up in the HTML file, such as updating ID labels, removing unnecessary classes, proper indentation, adding alt tags, changing tag names (i.e. from div to section), and more. For the CSS this includes consolidating all selectors, moving the blocks to match the HTML template, reducing repetitive code, and other general updates to ensure consistency throughout the file.
 
